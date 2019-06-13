@@ -18,5 +18,8 @@ console.log(replacementEngine('parameters', 'hello', 'world'));
 //a standalone implementation that works on single strings (such as files) - no json formatting
 const templateString = fs.readFileSync('./index.html.t', 'utf8');
 
-console.log(stringReplacement(templateString, "My Awesome Website!", "Come and check out my website!"));
+console.log(stringReplacement(templateString, 'My Awesome Website!', 'Come and check out my website!'));
+
+//you can combine the two to create randomized documents, if using a template file
+console.log(stringReplacement(templateString, 'My Awesome Website!', replacementEngine('random') ));
 
