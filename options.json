@@ -1,0 +1,7 @@
+{
+	"random": [
+		"Have fun!",
+		"Do something awesome!"
+	],
+	"parameters": "You can replace parts of strings with parameters like this: {1} {2}"
+}
